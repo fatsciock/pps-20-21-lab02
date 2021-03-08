@@ -12,11 +12,20 @@ class ParityTest {
   val odd = "odd"
 
   @Test
-  def testEven(){
+  def testEvenMethod(){
     assertEquals(even, parity.verifyParity(2))
   }
 
-  @Test def testOdd(){
+  @Test def testOddMethod(){
     assertEquals(odd, parity.verifyParity(1))
+  }
+
+  @Test
+  def testEvenLiteral(){
+    assertEquals(even, parity.verifyParityLiteral(2))
+  }
+
+  @Test def testOddLiteral(){
+    assertEquals(odd, parity.verifyParityLiteral(1))
   }
 }

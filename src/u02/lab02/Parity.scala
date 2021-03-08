@@ -4,8 +4,13 @@ object Parity {
 
   object ParityController {
 
-    def verifyParity (n: Int) : String = n match {
-      case n if n % 2==0 => "even"
+    def verifyParity (x: Int) : String = x match {
+      case n if n%2 == 0 => "even"
+      case _ => "odd"
+    }
+
+    val verifyParityLiteral: Int => String = {
+      case x if x%2 == 0 => "even"
       case _ => "odd"
     }
   }
