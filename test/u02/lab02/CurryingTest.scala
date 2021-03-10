@@ -22,4 +22,20 @@ class CurryingTest {
     assertFalse(curryingObj.p2(10,2,3))
     assertFalse(curryingObj.p2(1,10,3))
   }
+
+  @Test
+  def testP3(){
+    assertTrue(curryingObj.p3(1)(2)(3))
+    val tmp = curryingObj.p3(1)(2)(_)
+    assertTrue(tmp(3))
+    assertFalse(curryingObj.p3(10)(2)(3))
+    assertFalse(curryingObj.p3(1)(10)(3))
+  }
+
+  @Test
+  def testP4(){
+    assertTrue(curryingObj.p4(1, 2, 3))
+    assertFalse(curryingObj.p4(10,2,3))
+    assertFalse(curryingObj.p4(1,10,3))
+  }
 }

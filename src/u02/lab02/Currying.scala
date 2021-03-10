@@ -10,4 +10,11 @@ object Currying {
     (x <= y) && (y <= z)
   }
 
+  def p3 (x: Double) (y: Double) (z: Double): Boolean = {
+    (x <= y) && (y <= z)
+  }
+
+  def p4 (x: Double, y: Double, z: Double): Boolean = {
+    (x <= y) && (y <= z)
+  }
 }
