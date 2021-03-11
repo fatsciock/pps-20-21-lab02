@@ -42,6 +42,7 @@ class ShapesTest {
 
   @Test
   def testSquareArea(){
-    val circle = shapesObj.Square(7.3)
+    val square = shapesObj.Square(7)
+    assertEquals(49, shapesObj.area(square))
   }
 }
