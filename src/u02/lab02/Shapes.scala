@@ -16,5 +16,6 @@ object Shapes {
 
   def area(shape: Shapes): Double = shape match{
     case Rectangle(l1, l2) => l1*l2
+    case Circle(r) => r*r*Math.PI
   }
 }
