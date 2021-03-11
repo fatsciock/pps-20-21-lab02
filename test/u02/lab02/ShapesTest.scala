@@ -36,7 +36,8 @@ class ShapesTest {
 
   @Test
   def testCircleArea(){
-    val circle = shapesObj.Circle(5.5)
+    val circle = shapesObj.Circle(10)
+    assertEquals(314, shapesObj.area(circle))
   }
 
   @Test
