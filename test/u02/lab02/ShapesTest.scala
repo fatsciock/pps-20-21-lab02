@@ -16,7 +16,7 @@ class ShapesTest {
   @Test
   def testCirclePerimeter(){
     val circle = shapesObj.Circle(5.5)
-    assertEquals(30, shapesObj.perimeter(circle))
+    assertEquals(34, shapesObj.perimeter(circle).intValue())
   }
 
   @Test
