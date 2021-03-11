@@ -31,7 +31,7 @@ class ShapesTest {
   @Test
   def testRectangleArea(){
     val rect = shapesObj.Rectangle(5, 12.7)
-
+    assertEquals(63.5, shapesObj.area(rect))
   }
 
   @Test
